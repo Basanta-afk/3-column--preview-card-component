@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            background: rgb(255, 251, 251);
+            text-align: center;
+            min-height: 90vh;
+        }
+        
+        main {
+            display: flex;
+            min-width: 600px;
+            margin: 1em;
+        }
+        
+        section {
+            margin: auto;
+            display: flex;
+            text-align: justify;
+            color: #F3F3F3;
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        section h2 {
+            padding: 0px 25px;
+            text-transform: uppercase;
+        }
+        
+        section p {
+            padding: 0px 25px;
+        }
+        
+        .content-1 {
+            background: #E18528;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 250px;
+        }
+        
+        .content-2 {
+            background: #065859;
+            border-radius: 0px;
+            width: 250px;
+        }
+        
+        .content-3 {
+            background: #0c3836;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 250px;
+        }
+        
+        img {
+            padding: 25px;
+        }
+        
+        .button {
+            padding: 25px;
+            justify-content: space-around;
+        }
+        
+        #ttn {
+            border: 2px solid #fff;
+            border-radius: 10px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            font-size: 10px;
+            border-style: hidden;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .attribution {
+            position: absolute;
+            bottom: 0;
+            font-size: 0.75rem;
+            line-height: 20px;
+            text-align: center;
+            color: black;
+            margin-bottom: 10px;
+        }
+        
+        .attribution a {
+            text-decoration: none;
+            color: #E39942;
+            font-weight: bold;
+        }
+        
+        .attribution a:hover {
+            color: violet;
+        }
+        
+        @media only screen and(max-with:1024) {
+            section {
+                padding: 3em 4.5em 3em 3em;
+            }
+        }
+        
+        @media only screen and (max-width:625px) {
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+            section h2 {
+                padding-bottom: 10px;
+            }
+            section .content-1 {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 0;
+            }
+            section .content-3 {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .attribution {
+                position: relative;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="content-1">
+                <img src="images/icon-sedans.svg" alt="">
+                <h2>Sedans</h2>
+                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                <div class="button">
+                    <button id="ttn">Learn More</button>
+                </div>
+            </div>
+            <div class="content-2">
+                <img src="images/icon-suvs.svg" alt="">
+                <h2>SUVs</h2>
+                <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+                <div class="button">
+                    <button id="ttn">Learn More</button>
+                </div>
+            </div>
+            <div class="content-3">
+                <img src="images/icon-luxury.svg" alt="">
+                <h2>Luxury</h2>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+                <div class="button">
+                    <button id="ttn">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="attribution">
+        <p>
+            Challenge by
+            <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">Frontend Mentor</a>
+        </p>
+        <p>
+            Coded by
+            <a href="https://twitter.com/BhusanKhadka">Basanta Bhusan khadka</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
